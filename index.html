@@ -3,61 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michał Maciejewsk - Junior Developer</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/splide.min.css">
 </head>
 <body>
-    
+  <section></section>
    <main>
     <div class="title">
-        <div class="name">Portfolio</div>
-        <div class="footer">Michał Maciejewski</div>
-        <nav> 
-            <ul>
-        <li><a href="#" class="active">O mnie</a></li>
-        <li><a href="#">Aplikacje</a></li>
-        <li><a href="#">Umiejetnosci</a></li>
-        <li><a href="#">Kontakt</a></li>
-    </ul>
-    </nav></div>
+      <div class="name">Portfolio</div>
+      <div class="footer">Michał Maciejewski</div>
+      <nav> 
+          <ul>
+      <li><a href="#" id="opt1"class="active" onclick="changeContainer('container1')">O mnie </br> oraz kontakt</a></li>
+      <li><a href="#" id="opt2" onclick="changeContainer('container2')">Aplikacje</a></li>
+      <li><a href="#" id="opt3" onclick="changeContainer('container3')">Umiejetnosci</a></li>
+  </ul>
+  </nav></div>
        <div class="container1">
-        <div class="opt 1">O mnie</div>
-        <div class="opt 2">Aplikacje</div>
-        <div class="opt 3">Umiejetnosci</div>
-        <div class="opt 4">Kontakt</div>
+        <div class="opt 1"onclick="changeContainer('container1')">O mnie <br>oraz kontakt</div>
+        <div class="opt 2"onclick="changeContainer('container2')">Portfolio</div>
+        <div class="opt 3" onclick="changeContainer('container3')">Umiejetnosci</div>
     </div>
     <div class="container2">
-        <div class="infoDiv">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, sed.
-        </div>
+        <div class="splide">
+            <div class="splide__track">
+            <ul class="splide__list">
+               <li class="splide__slide"><div class="name">nazwa</div><img src="https://cdn.mansfeld.pl/wp-content/uploads/2020/09/karuzela-slider-bez-jquery-1110x686.jpg.webp"><div class="desc">opis</div></li>
+               <li class="splide__slide"><div class="name">nazwa</div><img src="https://cdn.mansfeld.pl/wp-content/uploads/2020/09/karuzela-slider-bez-jquery-1110x686.jpg.webp"><div class="desc">opis</div></li>
+               <li class="splide__slide"><div class="name">nazwa</div><img src="https://cdn.mansfeld.pl/wp-content/uploads/2020/09/karuzela-slider-bez-jquery-1110x686.jpg.webp"><div class="desc">opis</div></li>
+               <li class="splide__slide"><div class="name">nazwa</div><img src="https://cdn.mansfeld.pl/wp-content/uploads/2020/09/karuzela-slider-bez-jquery-1110x686.jpg.webp"><div class="desc">opis</div></li>
+               </ul>
+            </div>
+         </div>
+         <div class="link">link do gita</div>
     </div>
-    <div class="container3">tu bedzie karuzela marzen</div>
-    <div class="container4"><div class="grid-container">
-        <div class="nameC1">a</div>
-        <div class="nameC2">a</div>
-        <div class="nameC3">a</div>
-        <div class="item1C1">a</div>
-        <div class="item2C1">aa</div>
-        <div class="item1C2">aa</div>
-        <div class="item2C2">aa</div>
-        <div class="item1C3">aa</div>
-        <div class="item2C3">aa</div>
-        <div class="nameC4">aa</div>
-        <div class="item1C4">aa</div>
-        <div class="item2C4">aa</div>
-        <div class="item3C1">aa</div>
-        <div class="item3C2">aa</div>
-        <div class="item3C3">aa</div>
-        <div class="item3c4">aa</div>
-      </div> </div>
-    <div class="container5">
-        <div class="contactDiv">
-            <div class="name">Michał Maciejewski</div>
-            <div class="mail">mail:</div>
-            <div class="git"><a href="https://github.com/MMaciejewski1/">https://github.com/MMaciejewski1/</div>
 
-        </div>
+    <div class="container3">
+        <h2>Znajomość jezykow</h2>
+<div class="first">
+
+  <div class="fitem1">Java</div>
+  <div class="fitem2">C#</div>
+  <div class="fitem3">Swift</div>
+  <div class="fitem4">Html</div>
+  <div class="fitem5">CSS</div>
+  <div class="fitem6">SCSS</div>
+  <div class="fitem7">Javascript</div>
+  <div class="fitem8">SQL</div>
+  <div class="fitem9" style="font-size: 3em"><i class="fab fa-java"></i></div>
+  <div class="fitem10" style="font-size: 3em"><img src="https://img.icons8.com/ios-filled/50/000000/c-sharp-logo.png"/></i></div>
+  <div class="fitem11" style="font-size: 3em"><i class="fab fa-swift"></i></div>
+  <div class="fitem12" style="font-size: 3em"><i class="fab fa-html5"></i></div>
+  <div class="fitem13" style="font-size: 3em"><i class="fab fa-css3"></i></div>
+  <div class="fitem14" style="font-size: 3em"><i class="fab fa-sass"></i></div>
+  <div class="fitem15" style="font-size: 3em"><i class="fab fa-js-square"></i></div>
+  <div class="fitem16" style="font-size: 3em"><i class="fas fa-database"></i></div>
+</div><h2>Znajomość technologii</h2>
+<div class="second">
+  <div class="sitem1">Asp .NET</div>
+  <div class="sitem2">IOS</div>
+  <div class="sitem3">Android</div>
+  <div class="sitem4" style="font-size: 3em"><img src="https://img.icons8.com/metro/48/000000/asp.png"/></i></div>
+  <div class="sitem5" style="font-size: 3em"><i class="fab fa-android"></i></div>
+  <div class="sitem6" style="font-size: 3em"><i class="fab fa-swift"></i></div>
+</div>
+<h2>Umiejetnosci</h2>
+<div class="third">
+    <div class="titem1">Znajomość SCRUM</div>
+    <div class="titem2">Znajomość GITHUB</div>
+    <div class="titem3" style="font-size: 3em"><img src="https://img.icons8.com/ios-filled/48/000000/workflow.png"/></div>
+    <div class="titem4" style="font-size: 3em"><i class="fab fa-github"></i></div>
+  </div>
     </div>
     </main>
+    <script src="js/splide.min.js"></script>  
+     <script src="https://kit.fontawesome.com/c0ce357489.js" crossorigin="anonymous"></script>
+     <script src="js/script.js"></script>
+     <script>
+      new Splide( '.splide', {
+	type   : 'loop',
+	padding: {
+		right: '5rem',
+		left : '5rem',
+	},
+} ).mount();
+      setInterval(createSquare,150);
+      </script>
 </body>
 </html>
