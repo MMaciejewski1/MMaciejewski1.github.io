@@ -12,9 +12,7 @@ function createSquare(){
         setTimeout(()=>{square.remove()},5000)
 }
 
-function changeContainer(container){
-
-        
+function changeContainer(container){   
         switch(container){
                 case 'container1':
                 document.querySelector('.container1').style.display='flex';
@@ -64,7 +62,16 @@ function changeContainer(container){
                 document.getElementById("opt3").classList.remove('active');
                 //document.getElementById("opt4").classList.add('active');
                 break;
-
         }
-
 }
+
+
+//main scripts
+new Splide( '.splide', {
+	type   : 'loop',
+	padding: {
+		right: '5rem',
+		left : '5rem',
+	},
+} ).mount();
+      setInterval(createSquare,150);

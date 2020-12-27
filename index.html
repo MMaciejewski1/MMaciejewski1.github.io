@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Junior Developer Michał Maciejewski</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/splide.min.css">
 </head>
@@ -11,8 +11,8 @@
   <section></section>
    <main>
     <div class="title">
-      <div class="name">Portfolio</div>
-      <div class="footer">Michał Maciejewski</div>
+      <div class="boxP"><div class="name">Portfolio</div></div>
+      <div class="footer">Michał Maciejewski</br>Junior Developer</div>
       <nav> 
           <ul>
       <li><a href="#" id="opt1"class="active" onclick="changeContainer('container1')">O mnie </br> oraz kontakt</a></li>
@@ -21,9 +21,9 @@
   </ul>
   </nav></div>
        <div class="container1">
-        <div class="opt 1"onclick="changeContainer('container1')">O mnie <br>oraz kontakt</div>
-        <div class="opt 2"onclick="changeContainer('container2')">Portfolio</div>
-        <div class="opt 3" onclick="changeContainer('container3')">Umiejetnosci</div>
+      <div class="box">  <div class="opt 1"onclick="changeContainer('container1')">O mnie <br>oraz kontakt</div></div>
+      <div class="box">    <div class="opt 2"onclick="changeContainer('container2')">Portfolio</div></div>
+      <div class="box">    <div class="opt 3" onclick="changeContainer('container3')">Umiejetnosci</div></div>
     </div>
     <div class="container2">
         <div class="splide">
@@ -51,7 +51,7 @@
   <div class="fitem6">SCSS</div>
   <div class="fitem7">Javascript</div>
   <div class="fitem8">SQL</div>
-  <div class="fitem9" style="font-size: 3em"><i class="fab fa-java"></i></div>
+  <div class="fitem9"  style="font-size: 3em"><i class="fab fa-java"></i></div>
   <div class="fitem10" style="font-size: 3em"><img src="https://img.icons8.com/ios-filled/50/000000/c-sharp-logo.png"/></i></div>
   <div class="fitem11" style="font-size: 3em"><i class="fab fa-swift"></i></div>
   <div class="fitem12" style="font-size: 3em"><i class="fab fa-html5"></i></div>
@@ -80,15 +80,6 @@
     <script src="js/splide.min.js"></script>  
      <script src="https://kit.fontawesome.com/c0ce357489.js" crossorigin="anonymous"></script>
      <script src="js/script.js"></script>
-     <script>
-      new Splide( '.splide', {
-	type   : 'loop',
-	padding: {
-		right: '5rem',
-		left : '5rem',
-	},
-} ).mount();
-      setInterval(createSquare,150);
-      </script>
+
 </body>
 </html>

@@ -35,6 +35,7 @@ main{
     left: 10vw;
 	top: 10vh;
 	border-radius: 10px;
+	border: #ad4c00 2vh solid;
 color: black;
 
 	box-shadow: 0 25px 50px rgba($color: #fff, $alpha: 0.2);
@@ -45,13 +46,14 @@ color: black;
 	.title{
 		top: -4vh;
 		position: relative;
+		color:white;
 		filter: invert(100%);
 		.footer{
-			border: black 2px solid;
-			background-color: blanchedalmond;
+			background-color:#52B3FF;
+							-webkit-box-shadow: 0vh 3vh 10vh 12vh #52B3FF; 
+							box-shadow: 0vh 3vh 10vh 12vh #52B3FF;
 			right: 5vw;
 			top: 81.5vh;	
-			//display:none;
 			position: absolute;
 			overflow: visible;
 			white-space: nowrap;
@@ -59,40 +61,42 @@ color: black;
 			font-family: Raleway-Heavy;
 			font-style: normal;
 			font-weight: normal;
-			font-size: 29.7266902923584px;
-			color: rgba(39,54,80,1);
+			font-size: 29.7266902923584px;			
 			letter-spacing: 0.25px;
 			padding: 5px;
 		}
-		.name{
-			border: black 2px solid;
-			background-color: blanchedalmond;
-			left: 5vw;	
-			//display:none;
-			position: absolute;
-			overflow: visible;
-			padding: 5px;
+	.boxP{
+		background-color:#52B3FF;
+		left: 5vw;	
+		position: absolute;
+		overflow: visible;
+		padding: 5px;
+			.name{			
+							-webkit-box-shadow: 0vh -3vh 10vh 12vh #52B3FF; 
+							box-shadow: 0vh -1vh 10vh 10vh #52B3FF;		
 			white-space: nowrap;
 			text-align: center;
 			font-family: Raleway-Heavy;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 29.7266902923584px;
-			color: rgba(39,54,80,1);
-			letter-spacing: 0.25px;}
+			letter-spacing: 0.25px;}}
 		nav{
 			display:none;
-			
+			-webkit-box-shadow: 0vh -3vh 10vh 12vh #52B3FF; 
+							box-shadow: 1vh 2vh 10vh 7vh #52B3FF;
+							background-color:#52B3FF ;
 			ul {
 				list-style:none;
 				display:flex;
+				top: -4vh;
 				flex-direction:row;
 				justify-content: space-between;
 				align-items: center;
 			left: 5vw;	
 			position: absolute;
 			overflow: visible;
-			padding: 5px;
+			padding: 5px;			
 			white-space: nowrap;
 			text-align: center;
 			font-family: Raleway-Heavy;
@@ -100,24 +104,26 @@ color: black;
 			font-weight: normal;
 			font-size: 29.7266902923584px;
 			color: rgba(39,54,80,1);
-			letter-spacing: 0.25px;}
+			letter-spacing: 0.25px;}			
 					li{
 						 a {
-						border: rgb(3, 42, 124) 2px solid;
-						background-color: blanchedalmond;					
 						color: rgba(39,54,80,1);
 						display:block;
-						padding:1vh 2vw;
+						margin-right: 10vh;
+							width: 12vw;
+							height: 5vw;
+							font-size: 2vw;
 						text-decoration:none;
-						
+						border: rgba($color: red, $alpha: 0.1) 5px solid;
+						border-radius: 2vh;
 							}
-						a:hover {
-							background-color: #DB0FC8;
-							color:#0409DB;
+						a:hover {		
+						transform: translateX(10px) translateY(10px);
+						color:green;
 								}	
 						.active{
-							background-color: #51db1a;
-							color:#0409DB;
+
+							color:white;
 						}
 						}	
 				}}
@@ -132,29 +138,51 @@ color: black;
 	justify-content: space-evenly;
 	border-radius: 10px;
 	filter: invert(100%);
+.box{
+	box-shadow: inset 5px 5px 5px rgba($color: #fff, $alpha: 0.05),
+	inset -5px -5px 5px rgba($color: #000000, $alpha: 0.5),
+	 5px 5px 5px rgba($color: #fff, $alpha: 0.05),		 
+	 -5px -5px 5px rgba($color: #000000, $alpha: 0.5);
+	 border: #52B3FF 1vh solid;
+		border-radius: 15px;
+		width: 20vw;
+		height: 10vw;
 	.opt{
-		width: 190px;
+		width: 100%;
+		height: 100%;
 		white-space: nowrap;
 		text-align: center;
 		font-family: Raleway-Heavy;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 24px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		font-size: 2vw;
 		padding: 20px;
-		color: rgba(1,175,184,1);
+		color: #52B3FF;
 		letter-spacing: 0.25px;
-		border: blue 2px solid;
-		border-radius: 10px;
-		background-color: blanchedalmond;
+		position: relative;
+		transition: 5s;
 	}
 
 	.opt:hover{
-border: red 2px solid;
+		width: 19vw;
+		height: 9vw;
+		transform: translateY(-5vh) translateX(-5vh);
+		border-radius: 15px;
+		box-shadow: inset 5px 5px 5px rgba($color: #fff, $alpha: 0.05),
+	inset -5px -5px 5px rgba($color: #000000, $alpha: 0.5),
+	 5px 5px 5px rgba($color: #fff, $alpha: 0.05),		 
+	 -5px -5px 5px rgba($color: #000000, $alpha: 0.5);
+border: red 5px solid;
 color: brown;
 		}
 }
+}
 .container2{
-color:magenta;
+color:#52B3FF;
 font-size: large;
 display: none;
 flex-direction: column;
@@ -181,7 +209,7 @@ height: 20vh;}
 	flex-direction: column;
 	justify-items: center;
 	align-items: center;
-	padding: 25px;
+	padding: 5%;
 	filter: invert(100%);
 	.first {
 		display: grid;
@@ -239,7 +267,7 @@ height: 20vh;}
 		padding: 10px;
 		display: grid;
 		grid-template-columns:2.5fr 0.6fr;
-		grid-template-rows: 3.3fr 2fr 2fr;
+		grid-template-rows: 3.3fr 2fr;
 		gap: 0px 0px;
 		grid-template-areas:
 		  "item3 item4"
