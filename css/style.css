@@ -566,8 +566,8 @@ main .title nav li .active {
   .container4 .contact div {
     margin: 0px;
   }
-  .container3 i {
-    font-size: 10px;
+  .container3 {
+    height: 1100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
