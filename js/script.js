@@ -18,7 +18,7 @@ function changeContainer(container){
                 document.querySelector('.container1').style.display='flex';
                 document.querySelector('.container2').style.display='none';
                 document.querySelector('.container3').style.display='none';
-               // document.querySelector('.container4').style.display='none';
+                document.querySelector('.container4').style.display='none';
                 document.querySelector('.name').style.display='none';
                 document.querySelector('nav').style.display='block';
                 document.getElementById("opt1").classList.add('active');
@@ -30,7 +30,7 @@ function changeContainer(container){
                 document.querySelector('.container1').style.display='none';
                 document.querySelector('.container2').style.display='flex';
                 document.querySelector('.container3').style.display='none';
-              //  document.querySelector('.container4').style.display='none';
+                document.querySelector('.container4').style.display='none';
                 document.querySelector('.name').style.display='none';
                 document.querySelector('nav').style.display='block';
                 document.getElementById("opt1").classList.remove('active');
@@ -42,24 +42,25 @@ function changeContainer(container){
                 document.querySelector('.container1').style.display='none';
                 document.querySelector('.container2').style.display='none';
                 document.querySelector('.container3').style.display='flex';
-               // document.querySelector('.container4').style.display='none';
+                document.querySelector('.container4').style.display='none';
                 document.querySelector('.name').style.display='none';
                 document.querySelector('nav').style.display='block';
                 document.getElementById("opt1").classList.remove('active');
                 document.getElementById("opt2").classList.remove('active');
                 document.getElementById("opt3").classList.add('active');
-                //document.getElementById("opt4").classList.remove('active');
+                document.getElementById("opt4").classList.remove('active');
                 break;
                 case 'container4':
                 document.querySelector('.container1').style.display='none';
                 document.querySelector('.container2').style.display='none';
                 document.querySelector('.container3').style.display='none';
-              //  document.querySelector('.container4').style.display='flex';
+                document.querySelector('.container4').style.display='flex';
                 document.querySelector('.name').style.display='none';
                 document.querySelector('nav').style.display='block';
-                document.getElementById("opt1").classList.remove('active');
+                document.getElementById("opt1").classList.add('active');
                 document.getElementById("opt2").classList.remove('active');
-                document.getElementById("opt3").classList.remove('active');
+                document.getElementById("opt3").classList.remove('active');               
+                document.querySelector('.footer').style.display='none';
                 //document.getElementById("opt4").classList.add('active');
                 break;
         }
