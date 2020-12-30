@@ -27,7 +27,7 @@ function changeContainer(container){
                 //document.getElementById("opt4").classList.remove('active');
                 break;
                 case 'container2':
-                document.querySelector('.container1').style.display='none';
+                document.querySelector('.conMain1').style.display='none';
                 document.querySelector('.container2').style.display='flex';
                 document.querySelector('.container3').style.display='none';
                 document.querySelector('.container4').style.display='none';
@@ -39,7 +39,7 @@ function changeContainer(container){
                 //document.getElementById("opt4").classList.remove('active');
                 break;
                 case 'container3':
-                document.querySelector('.container1').style.display='none';
+                document.querySelector('.conMain1').style.display='none';
                 document.querySelector('.container2').style.display='none';
                 document.querySelector('.container3').style.display='flex';
                 document.querySelector('.container4').style.display='none';
@@ -51,7 +51,7 @@ function changeContainer(container){
                 document.getElementById("opt4").classList.remove('active');
                 break;
                 case 'container4':
-                document.querySelector('.container1').style.display='none';
+                document.querySelector('.conMain1').style.display='none';
                 document.querySelector('.container2').style.display='none';
                 document.querySelector('.container3').style.display='none';
                 document.querySelector('.container4').style.display='flex';
@@ -97,3 +97,15 @@ function showSlides(n) {
 //main scripts
 
       setInterval(createSquare,150);
+      var splide = new Splide( '.splide' );
+
+      splide.on( 'autoplay:playing', function ( rate ) {
+        console.log( rate ); // 0-1
+      } );
+      splide.mount();
+      
+
+
+     
+
+
